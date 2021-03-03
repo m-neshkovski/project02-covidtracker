@@ -1,0 +1,116 @@
+/* Project 01 Brainster Labs */
+
+/* Global selectors - start */
+  body {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  /* Colors */
+    .bg-custom-color {
+      background-color: #FCD232;
+    }
+
+    .btn-custom_colors {
+      background-color: #FF1300;
+      color: white;
+    }
+    /* /Colors */
+  
+  /* Korekcija na OUTLINE na dugminja, inputi i select */
+    .form-control:focus, .custom-select:focus, .btn:focus {
+      border-color: #FF1300;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(255, 13, 0, 0.25);
+    }
+    /* Korekcija na OUTLINE na dugminja, inputi i select - kraj */
+
+  /* Global selectors - end */
+
+/* Navbar custom style - start */
+  .navbar-txt-logo {
+    font-size: 7px;
+      font-weight: bold;
+  }
+
+  .fa-1_ipol_x {
+    font-size: 1.5em;
+  }
+  /* Navbar custom style - end */
+
+/* Home jumbutron style - start */
+  #home {
+    height: 50vh;
+    background-image: url(./img/jumbutron_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .jumbotron-mate {
+    background-color: rgba(0,0,0,.5);
+    margin: 0;
+  }
+  /* Home jumbutron style - start */
+
+/* Filter - Navbar selectors */
+  .filterDiv {
+    display: none; /* Hidden by default */
+  }
+  
+  .show {
+    display: block;
+  }
+
+  #myBtnContainer .nav-item:hover {
+    /* background-color: rgba(0,0,0,.15); */
+    background-color: rgba(255, 13, 0, 0.30);
+    opacity: 0.9;
+  }
+  
+  #myBtnContainer .nav-item.active {
+    background-color: #EB3B3B;
+    color: #343A40 !important; 
+  }
+  /* Filter - Navbar selectors - end */
+
+/* Redicata so karticki - start */
+  .card-tag {
+    font-family: 'Fira Code', monospace;
+    background-color: #FCD232;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+
+  .rounded-custom {
+    border-radius: 15px;
+  }
+
+  .rounded-custom-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .card-img-top {
+    max-height: 220px;
+    overflow-y: hidden;
+  }
+
+  .filterDiv>.card:hover {
+    /* so translacija nagore */
+    /* transform: translate(0, -15px); */
+    /* ili so zgolemuvawe za 3% po x i po y oska */
+    transform: scale(1.03, 1.03);
+    /* tranzicija 0.3s */
+    transition-duration: .3s;
+  }
+  /* Redicata so karticki - end */
+
+/* specificni selektori za stranata so formata za kontakt - vraboti.html */
+
+  .vraboti {
+    min-height: 100vh;
+  }
+
+  .h-min-100vh {
+    min-height: 100vh !important;
+  }
